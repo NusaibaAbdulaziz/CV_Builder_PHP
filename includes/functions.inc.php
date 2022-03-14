@@ -110,9 +110,10 @@ function emailExists($conn, $email){
      }
      else if($checkpassword === true){
          session_start();
-         $_SESSION["userid"] = $emailExists["usersId"];
+         $_SESSION["useremail"] = $emailExists["usersEmail"];
          $_SESSION["userfirstname"] = $emailExists["usersFisrtName"];
-         header("location: ../CV_Builder.php");
+        
+         header("location: ../index.php");
          exit();
      }
  }
