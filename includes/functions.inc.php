@@ -110,7 +110,8 @@ function emailExists($conn, $email){
      }
      else if($checkpassword === true){
          session_start();
-         $_SESSION["useremail"] = $emailExists["usersEmail"];
+         $_SESSION["userid"] = $emailExists["usersId"];
+         $_SESSION["email"] = $emailExists["usersEmail"];
          $_SESSION["userfirstname"] = $emailExists["usersFisrtName"];
         
          header("location: ../index.php");

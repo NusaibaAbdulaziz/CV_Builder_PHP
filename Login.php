@@ -46,7 +46,7 @@ include_once 'header.php';
 
                             <div class="form-group">
                                 <label for="password" class="text-info h5">pass-word:</label><br>
-                                <input type="text" name="password" id="password" class="form-control">
+                                <input type="password" name="password" id="password" class="form-control">
                             </div>
                            
 

@@ -10,16 +10,16 @@
             <div class="collapse navbar-collapse" id="navbarmenue">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="CV_Builder.php">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link text-light" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
 
                 <?php
-                if (isset($_SESSION["usersEmail"])){
+                if (isset($_SESSION["email"])){
                   echo "<li class='nav-item'>
                   <a class='nav-link text-light' href='Profile.php'>Profile page</a>
                 </li>";
                   echo  "<li class='nav-item'>
-                  <a class='nav-link text-light' href='logout.php'>Log out</a>
+                  <a class='nav-link text-light' href='includes/logout.inc.php'>Log out</a>
                 </li>";
                 }
                 else {
