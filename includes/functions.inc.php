@@ -112,7 +112,7 @@ function emailExists($conn, $email){
          session_start();
          $_SESSION["userid"] = $emailExists["usersId"];
          $_SESSION["email"] = $emailExists["usersEmail"];
-         $_SESSION["userfirstname"] = $emailExists["usersFisrtName"];
+         $_SESSION["userfirstname"] = $emailExists["usersFirstName"];
         
          header("location: ../index.php");
          exit();

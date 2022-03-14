@@ -24,6 +24,14 @@ include_once 'header.php';
 
 
           <section class="text-secondary p-5 text-center" style="background-color: #BEDCFE;">
+<!-- 
+          <?php
+                if (isset($_SESSION["email"])){
+
+                  echo "<p> Hello ".$_SESSION["userfirstname"]." !</p>";
+                }
+                ?> -->
+
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between" style="font-family: 'Times New Roman', Times, serif"> 
                     <div>
