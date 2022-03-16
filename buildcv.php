@@ -24,9 +24,76 @@ include_once 'header.php';
 
 
           <section class="text-secondary p-5 text-center" style="background-color: #BEDCFE;">
-             <p> Testing </p>
+
+          <div class="container">
+          <h1 class="well">Start building your CV</h1>
+	      <div class="col-lg-12 well">
+	      <div class="row">
+				<form id="signup-form" class="form" action="includes/signup.inc.php" method="post">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<label>Full Name</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="col-sm-6 form-group">
+								<label>Major</label>
+								<input type="text" class="form-control">
+							</div>
+						</div>					
+						<div class="form-group">
+							<label>Profile</label>
+							<textarea rows="3" class="form-control"></textarea>
+						</div>	
+						<div class="row">
+							<div class="col-sm-4 form-group">
+								<label>General skills</label>
+								<input type="text" class="form-control">
+							</div>	
+							<div class="col-sm-4 form-group">
+								<label>Major Skills</label>
+								<input type="text" class="form-control">
+							</div>	
+							<div class="col-sm-4 form-group">
+								<label>Languages</label>
+								<input type="text" class="form-control">
+							</div>		
+						</div>
+                        <div class="form-group">
+							<label>Achievements</label>
+							<textarea rows="3" class="form-control"></textarea>
+						</div>
+                        <div class="form-group">
+							<label>Experience</label>
+							<textarea rows="3" class="form-control"></textarea>
+						</div>
 
 
+                        <div class="row">
+							<div class="col-sm-4 form-group">
+                               <label>Phone Number</label>
+						        <input type="text" class="form-control">
+							</div>	
+							    <div class="col-sm-4 form-group">
+                                <label>Email Address</label>
+					     	<input type="email" class="form-control">
+							</div>	
+							<div class="col-sm-4 form-group">
+                                <label>City</label>
+					         	<input type="text" class="form-control">
+							</div>		
+						</div>
+											
+						
+					
+					
+					<button type="button" class="btn btn-lg btn-info">Submit</button>					
+					</div>
+				</form> 
+				</div>
+	</div>
+	</div>
+             
 
           </section>
 
