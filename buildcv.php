@@ -60,10 +60,8 @@ session_start();
 		transform: translateX(2px);
 	}
 
-	#right
-	{
-		background-color: black;
-	}
+	
+
 	
 
 </style>
@@ -189,6 +187,8 @@ session_start();
 		<div class="container">
 
 			<h1 class="well">Start building your CV</h1>
+			<br>
+			<br>
 
 			<div class="col-lg-12 well">
 
@@ -312,8 +312,8 @@ session_start();
 
 
 
-						<div class="row">
-						<div class="col-sm-6 form-group">
+						<div class="row vertical-center-row" style="display: flex; justify-content: center;">
+						<div class=" col-md-4  form-group">
 						<label>Achievements</label>
 						<div class="buttonIn"><div class="row" id="Achievements">
 
@@ -328,7 +328,7 @@ session_start();
 					  </div>
 
 
-					    <div class="col-sm-6 form-group">
+					    <div class="col-md-4 form-group">
 						<label>Experiences</label>
 						<div class="buttonIn"><div class="row" id="Experience">
 
@@ -380,6 +380,8 @@ session_start();
 							</div>
 
 						</div>
+						<br>
+			<br>
 
 
 
