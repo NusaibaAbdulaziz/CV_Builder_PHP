@@ -194,7 +194,7 @@ session_start();
 
 				<div class="row">
 
-					<form id="signup-form" class="form" action="" method="post">
+					<form id="buildCV" class="form" action="includes/buildcv.inc.php" method="post">
 
 						<div class="col-sm-12">
 
@@ -204,7 +204,7 @@ session_start();
 
 									<label>Full Name</label>
 
-									<input type="text" class="form-control">
+									<input type="text" class="form-control" name="FullName">
 
 								</div>
 
@@ -212,7 +212,7 @@ session_start();
 
 									<label>Major</label>
 
-									<input type="text" class="form-control">
+									<input type="text" class="form-control" name="Major">
 
 								</div>
 
@@ -222,7 +222,7 @@ session_start();
 
 								<label>Profile</label>
 
-								<textarea rows="3" class="form-control"></textarea>
+								<textarea rows="3" class="form-control" name="Profile"></textarea>
 
 							</div>
 
@@ -359,7 +359,7 @@ session_start();
 
 								<label>Phone Number</label>
 
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" name="Phone">
 
 							</div>
 
@@ -367,7 +367,7 @@ session_start();
 
 								<label>Email Address</label>
 
-								<input type="email" class="form-control">
+								<input type="email" class="form-control" name="Email">
 
 							</div>
 
@@ -375,7 +375,7 @@ session_start();
 
 								<label>City</label>
 
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" name="City">
 
 							</div>
 
@@ -391,7 +391,7 @@ session_start();
 
 
 
-						<button type="button" class="btn btn-lg btn-info">Submit</button>
+						<button type="submit" name="submit" class="btn btn-lg btn-info">Submit</button>
 
 				</div>
 
