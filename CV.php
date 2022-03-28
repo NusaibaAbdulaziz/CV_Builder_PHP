@@ -191,40 +191,16 @@
         <br>
         <br>
         <li> <font color="orange" size="5" >ACHIEVEMENTS</font></li>
+
+        <li><img src="ach.png" width=20px>
+
         <?php
                 if (isset($_SESSION['Achievements'])){
 
                   echo "<p> ".$_SESSION['Achievements']."</p>";
                 }
         ?>
-        <li>&emsp;&emsp;<b>TRC PROJECT, AL-Musannah</b></li>
-        <li><img src="ach.png" width=20px>&nbsp&nbsp Worked around 2 years (2020-2021) on a project which is</li>
-        <li>&emsp;&emsp;funded by The Research Council</li>
-        <br>
-        <li>&emsp;&emsp;<b>UTAS-IBRA IR4ERA</b></li>
-        <li>&emsp;&emsp;Presented a poster titled " School Bus Accident Monitoring</li>
-        <li><img src="ach.png" width=20px>&nbsp&nbsp System And Sending Emergency Information Including The</li>
-        <li>&emsp;&emsp;Location To The Authorities" in UTAS-IBRA, virtual conference in</li>
-        <li>&emsp;&emsp;2021</li>
-        <br>
-        <li>&emsp;&emsp;<b>ICCET, India</b></li>
-        <li>&emsp;&emsp;Shared a paper titled " Optimizing The AC Operation For Energy</li>
-        <li><img src="ach.png" width=20px>&nbsp&nbsp Management And AC Failure Monitoring System Through GSM</li>
-        <li>&emsp;&emsp;Technology For School Bus" in 9th International Conference on</li>
-        <li>&emsp;&emsp;Computing in Engineering & Technology in 2021</li>
-        <br>
-        <li>&emsp;&emsp;<b>2nd INCET, India</b></li>
-        <li>&emsp;&emsp;Shared a paper titled " An Advanced Public Transport With</li>
-        <li><img src="ach.png" width=20px>&nbsp&nbsp Tracking The Vehicle And Sending The Location Using GSM</li>
-        <li>&emsp;&emsp;And GPS During Pandemic Situations" in IEEE X-Plore in 2021</li>
-        <br>
-        <li>&emsp;&emsp;<b>IEEE Online Competition, Oman</b></li>
-        <li><img src="ach.png" width=20px>&nbsp&nbsp Won a first place in IEEE Oman online competition for the best</li>
-        <li>&emsp;&emsp;innovative idea to combat the Covid-19 pandemic in 2020</li>
-        <br>
-        <li>&emsp;&emsp;<b>Omani skills competition, Muscat</b></li>
-        <li><img src="ach.png" width=20px>&nbsp&nbsp Participated in an Omani skills competition in mobile robotics in</li>
-        <li>&emsp;&emsp;2018</li>
+        
         <br>
         <br>
         <li> <font color="orange" size="5" >EXPERIENCE</font></li>
