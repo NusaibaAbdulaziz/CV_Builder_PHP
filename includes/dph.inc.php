@@ -3,7 +3,7 @@
 $servername = "localhost";
 $dBUsername = "root";
 $dBPassword = "";
-$dBName = "loginsystem";
+$dBName = "cv_builder";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName );
 

@@ -1,5 +1,7 @@
 <?php
  session_start();
+//  if (isset($_SESSION['userId']))
+ include_once 'includes/dph.inc.php';
  ?>
 
 
@@ -50,7 +52,7 @@
                position: absolute;
                top: 254px;
                right:0px;
-               height:80.6%;
+               height:74%;
               
                
            }
@@ -70,7 +72,7 @@
             position: absolute;
             left:0px;
             top:254px;
-            height:50px;
+            height:100px;
            }
 
 
@@ -80,7 +82,7 @@
     </head>
     <body class="text-secondary" >
       <div class="Top"> 
-          <ul type="none" align="center" class="text-light">
+          <ul type="none" class="text-light text-center">
             <br>
             <br>
             <br>
@@ -88,10 +90,14 @@
             <br>
         <li>  <font size="8"  >
         <?php
-                if (isset($_SESSION['FullName'])){
 
-                  echo "<p> ".$_SESSION["FullName"]."</p>";
-                }
+               $user = '4';
+              //  $user = $_SESSION['userId'];
+               $sql = "SELECT FullName FROM `userscvdata` cd WHERE cd.userId=$user;"; 
+                $query = mysqli_query($conn, $sql);
+                $row = $query->fetch_assoc();
+                echo $row["FullName"];
+
          ?>
         </font></li>
         <li> <i>
@@ -178,6 +184,8 @@
 <div class="Right">
 
     <ul type="none">
+      <br>
+      <br>
         <li> <font color="orange" size="5" >PROFILE</font></li>
         
         <li>
@@ -206,9 +214,9 @@
         <li> <font color="orange" size="5" >EXPERIENCE</font></li>
 
         <?php
-                if (isset($_SESSION['Experiences'])){
+                if (isset($_SESSION['Experience'])){
 
-                  echo "<p> ".$_SESSION['Experiences']."</p>";
+                  echo "<p> ".$_SESSION['Experience']."</p>";
                 }
     ?>
 
@@ -217,9 +225,9 @@
     
 </div>
 
-<div class="ExtraSpace_1">
+<!-- <div class="ExtraSpace_1">
 <br>
-</div>
+</div> -->
 
 <div class="ExtraSpace_2">
     <br>
