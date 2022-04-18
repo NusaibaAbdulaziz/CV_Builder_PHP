@@ -15,9 +15,9 @@
 
                 <?php
                 if (isset($_SESSION["email"])){
-                  echo "<li class='nav-item'>
-                  <a class='nav-link text-light' href='Profile.php'>Profile page</a>
-                </li>";
+                //   echo "<li class='nav-item'>
+                //   <a class='nav-link text-light' href='profile.php'>Profile page</a>
+                // </li>";
                   echo  "<li class='nav-item'>
                   <a class='nav-link text-light' href='includes/logout.inc.php'>Log out</a>
                 </li>";
@@ -42,7 +42,14 @@
                       
                     </button>
                     <ul class="dropdown-menu text-center">
-                      <li><a href="buildcv.php">Create CV</a></li>
+                      <?php
+                      if (isset($_SESSION["email"])){
+                     echo " <li><a href='buildcv.php'>Create CV</a></li>"; }
+                     else{
+                      echo " <li><a href='login.php'>Create CV</a></li>";
+                     }
+
+                      ?>
                       <li><a href="aboutus.php">About us</a></li></ul>
                     
                   </div>

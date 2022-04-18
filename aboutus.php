@@ -24,8 +24,23 @@ include_once 'header.php';
 
 
           <section class="text-secondary p-5 text-center" style="background-color: #BEDCFE;">
-             <p> Testing </p>
+          <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between" style="font-family: 'Times New Roman', Times, serif"> 
+                    <div>
+                        
+                            <b> <ul class="lead ml-5" type="none">
+                            <h4> We prefer to be unknown -.- </h4>
 
+                            </div>
+                            <div>
+
+                    <img class="img-fluid d-none d-sm-block" src="1.png" width="400px">
+
+                </div>
+
+</div>
+</div>
+                           
 
 
           </section>
