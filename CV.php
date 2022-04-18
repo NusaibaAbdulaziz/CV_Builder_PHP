@@ -52,6 +52,11 @@ if ($conn->connect_error)
 
         .Left {
             background-color: rgb(255, 224, 179);
+            
+            /* top: 300px;
+            bottom:300px;
+            left: 0px;
+            height: 100%; */
 
         }
 
@@ -61,7 +66,7 @@ if ($conn->connect_error)
             position: absolute;
             top: 254px;
             right: 0px;
-            height: 74%;
+            height: 72.5%;
 
 
         }
@@ -81,7 +86,7 @@ if ($conn->connect_error)
             position: absolute;
             left: 0px;
             top: 254px;
-            height: 100px;
+            height: 49px;
         }
     </style>
 </head>
@@ -159,7 +164,15 @@ if ($conn->connect_error)
             $sql = "SELECT GeneralSkills FROM `userscvdata` cd WHERE cd.userId=$user;";
             $query = mysqli_query($conn, $sql);
             $row = $query->fetch_assoc();
-            echo $row["GeneralSkills"];
+            // echo $row["GeneralSkills"];
+
+            $str = $row["GeneralSkills"];
+            $token = strtok($str, ",");
+
+            while ($token !== false) {
+                echo "$token<br>";
+                $token = strtok(" ");
+            }
 
             ?>
         </ul>
@@ -172,7 +185,14 @@ if ($conn->connect_error)
             $sql = "SELECT MajorSkills FROM `userscvdata` cd WHERE cd.userId=$user;";
             $query = mysqli_query($conn, $sql);
             $row = $query->fetch_assoc();
-            echo $row["MajorSkills"];
+
+            $str = $row["MajorSkills"];
+            $token = strtok($str, ",");
+
+            while ($token !== false) {
+                echo "$token<br>";
+                $token = strtok(" ");
+            }
 
             ?>
         </ul>
@@ -187,7 +207,15 @@ if ($conn->connect_error)
             $sql = "SELECT Languages FROM `userscvdata` cd WHERE cd.userId=$user;";
             $query = mysqli_query($conn, $sql);
             $row = $query->fetch_assoc();
-            echo $row["Languages"];
+
+
+            $str = $row["Languages"];
+            $token = strtok($str, ",");
+
+            while ($token !== false) {
+                echo "$token<br>";
+                $token = strtok(" ");
+            }
 
             ?>
         </ul>
@@ -260,7 +288,7 @@ if ($conn->connect_error)
                 <font color="orange" size="5">ACHIEVEMENTS</font>
             </li>
 
-            <li><img src="ach.png" width=20px>
+            
 
                 <?php
 
@@ -268,7 +296,15 @@ if ($conn->connect_error)
                 $sql = "SELECT Achievements FROM `userscvdata` cd WHERE cd.userId=$user;";
                 $query = mysqli_query($conn, $sql);
                 $row = $query->fetch_assoc();
-                echo $row["Achievements"];
+                // echo $row["Achievements"];
+
+                $str = $row["Achievements"];
+                $token = strtok($str, ",");
+
+                while ($token !== false) {
+                    echo "$token <br>";
+                    $token = strtok("");
+                }
 
                 ?>
 
@@ -283,7 +319,15 @@ if ($conn->connect_error)
             $sql = "SELECT Experiences FROM `userscvdata` cd WHERE cd.userId=$user;";
             $query = mysqli_query($conn, $sql);
             $row = $query->fetch_assoc();
-            echo $row["Experiences"];
+            
+
+            $str = $row["Experiences"];
+            $token = strtok($str, ",");
+
+            while ($token !== false) {
+                echo "$token<br>";
+                $token = strtok(" ");
+            }
 
             ?>
 
