@@ -171,7 +171,7 @@ if ($conn->connect_error)
 
             while ($token !== false) {
                 echo "$token<br>";
-                $token = strtok(" ");
+                $token = strtok(",");
             }
 
             ?>
@@ -191,7 +191,7 @@ if ($conn->connect_error)
 
             while ($token !== false) {
                 echo "$token<br>";
-                $token = strtok(" ");
+                $token = strtok(",");
             }
 
             ?>
@@ -214,7 +214,7 @@ if ($conn->connect_error)
 
             while ($token !== false) {
                 echo "$token<br>";
-                $token = strtok(" ");
+                $token = strtok("");
             }
 
             ?>
