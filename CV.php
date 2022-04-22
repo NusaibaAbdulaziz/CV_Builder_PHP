@@ -45,18 +45,20 @@ if ($conn->connect_error)
         }
 
         .Top {
-            height: 10%;
+           
+            height: 1000px;
             width: 900px;
             background: #6e6e6e;
         }
 
         .Left {
             background-color: rgb(255, 224, 179);
-            
-            /* top: 300px;
-            bottom:300px;
+            position: absolute;
+            top: 260px;
             left: 0px;
-            height: 100%; */
+            height: 740px;
+            margin: 0px;
+            width: 312px;
 
         }
 
@@ -64,14 +66,14 @@ if ($conn->connect_error)
             width: 589.5px;
             background-color: white;
             position: absolute;
-            top: 254px;
+            top: 260px;
             right: 0px;
-            height: 72.5%;
+            height: 740px;
 
 
         }
 
-        .ExtraSpace_1 {
+        /* .ExtraSpace_1 {
             width: 589px;
             background-color: white;
             position: absolute;
@@ -87,7 +89,7 @@ if ($conn->connect_error)
             left: 0px;
             top: 254px;
             height: 49px;
-        }
+        } */
     </style>
 </head>
 
@@ -340,9 +342,9 @@ if ($conn->connect_error)
 <br>
 </div> -->
 
-    <div class="ExtraSpace_2">
+    <!-- <div class="ExtraSpace_2">
         <br>
-    </div>
+    </div> -->
 
 
 </body>
