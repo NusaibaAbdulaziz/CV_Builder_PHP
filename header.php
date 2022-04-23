@@ -15,11 +15,12 @@
 
                 <?php
                 if (isset($_SESSION["email"])){
-                //   echo "<li class='nav-item'>
-                //   <a class='nav-link text-light' href='profile.php'>Profile page</a>
-                // </li>";
-                  echo  "<li class='nav-item'>
+                 
+                echo  "<li class='nav-item'>
                   <a class='nav-link text-light' href='includes/logout.inc.php'>Log out</a>
+                </li>";
+                echo  "<li class='nav-item'>
+                  <a class='nav-link text-light' href=''>" . $_SESSION['email'] ."</a>
                 </li>";
                 }
                 else {
@@ -44,7 +45,7 @@
                     <ul class="dropdown-menu text-center">
                       <?php
                       if (isset($_SESSION["email"])){
-                     echo " <li><a href='buildcv.php'>Create CV</a></li>"; }
+                     echo " <li><a href='cv.php'>Your CV</a></li>"; }
                      else{
                       echo " <li><a href='login.php'>Create CV</a></li>";
                      }

@@ -12,6 +12,7 @@ if (isset($_POST["submit"])){
 
     if (emptyInputLogin($email, $password) !== false) {
         header("location: ../login.php?error=emptyinput");
+        // echo 'Wrong Login';
         exit();
         }
 

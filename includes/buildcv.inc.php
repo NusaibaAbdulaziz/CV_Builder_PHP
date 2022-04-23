@@ -21,24 +21,29 @@ if (isset($_POST["submit"])){
 
     require_once 'dph.inc.php';
     require_once 'functions.inc.php';
+
+    $userId = $_SESSION['userId'];
+    $query = "SELECT * from usersdatacv WHERE userId=$userId";
+    $result = mysqli_query($conn, $query);
+
+    if ($result->num_rows>0) {
+
+        $query = " UPDATE usersdata SET 'FullName = '$FullName', Major = '$Major', Profile = '$Profile', GeneralSkills = '$GeneralSkills', MajorSkills = '$MajorSkills', languages = '$Languages', Achievement = '$Achievements', Experiences = '$Experience', Phone = '$Phone', Email= '$Email', City = '$City' WHERE userid='$userId'";
     
-    $query =" INSERT INTO userscvdata (FullName, Major, Profile, GeneralSkills, MajorSkills, Languages, Achievements, Experiences, Phone, Email, City) VALUES ('$FullName', '$Major', '$Profile', '$GeneralSkills', '$MajorSkills', '$Languages', '$Achievements', '$Experience', '$Phone', '$Email', '$City' )";
+     
+    }
+    
+    else {
+
+        $query =" INSERT INTO userscvdata (userId, FullName, Major, Profile, GeneralSkills, MajorSkills, Languages, Achievements, Experiences, Phone, Email, City) VALUES ( '$userId', '$FullName', '$Major', '$Profile', '$GeneralSkills', '$MajorSkills', '$Languages', '$Achievements', '$Experience', '$Phone', '$Email', '$City' );";
+
+
+    }
+
     mysqli_query($conn, $query);
-
-
-    session_start();
-    $_SESSION['userId']=  $userId;
-    // $_SESSION['FullName']=  $FullName;
-    // $_SESSION['Major']=  $Major;
-    // $_SESSION['Profile']=  $Profile;
-    // $_SESSION['GeneralSkills']=  $GeneralSkills;
-    // $_SESSION['MajorSkills']=  $MajorSkills;
-    // $_SESSION['Languages']=  $Languages;
-    // $_SESSION['Achievements']=  $Achievements;
-    // $_SESSION['Experience']=  $Experience;
-    // $_SESSION['Phone']=  $Phone;
-    // $_SESSION['Email']=  $Email;
-    // $_SESSION['City']=  $City;
+    // session_start();
+    
+   
 
     header("location: ../CV.php");
     exit();
